@@ -15,7 +15,7 @@
 <!--            </el-form-item>-->
 <!--            <el-checkbox v-model="checkeds" class="login-remember">记住我</el-checkbox>-->
             <el-button type="primary" style="width: 100%"@click="submitLogin">登录</el-button>
-            <el-button @click="zhuce"> 注册</el-button>
+<!--            <el-button @click="zhuce"> 注册</el-button>-->
         </el-form>
     </div>
 </template>
@@ -95,14 +95,14 @@
 
             },
 
-            zhuce(){
-                this.$router.push('/zhuce');
-
-
-            },
-            clearForm() {
-                this.user = {};
-            }
+            // zhuce(){
+            //     this.$router.push('/zhuce');
+            //
+            //
+            // },
+            // clearForm() {
+            //     this.user = {};
+            // }
         }
 
     }
