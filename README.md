@@ -2,10 +2,10 @@
 
 ## Project setup
 ```
-npm install
+下载完项目需要 npm install
 ```
 
-没写拦截器，项目启动成功直接访问登录
+没写拦截器，项目启动成功直接端口号访问登录
 
 
 
