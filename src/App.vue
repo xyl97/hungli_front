@@ -1,32 +1,45 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
-  </div>
+
+    <div id="app">
+
+
+
+<!--        <el-main>-->
+         <router-view  v-if="isRouterAlive"> </router-view>
+
+
+    </div>
+
+
+
+
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
+<script>
+    // import StudentList from "./components/student/StudentList";
+    export default {
+        provide() {
+            return {
+                reload: this.reload
+            }
+        },
+        data(){
+            return {
+                isRouterAlive: true
+            }
+        },
+       // components: {StudentList}
+        methods: {
+            // 解决登陆成功后重新加载当前页面方法
+            reload() {
+                this.isRouterAlive = false
+                this.$nextTick(() => {
+                    this.isRouterAlive = true
+                })
+            }
+        }
+    }
+</script>
