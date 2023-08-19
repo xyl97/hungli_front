@@ -5,12 +5,18 @@
 下载完项目需要 npm install
 ```
 
+
+
 没写拦截器，项目启动成功直接端口号访问登录
+
+
+
 
 http://localhost:xxxx  登录
 http://localhost:xxxx/index 首页
 http://localhost:xxxx/emp/empCount 职工统计
 http://localhost:xxxx/emp/emplist  职工列表
+
 
 
 
