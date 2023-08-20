@@ -32,7 +32,6 @@ axios.interceptors.response.use(function (response) {
   if (response.data.msg=="请重新登录"){
 
     router.replace("/")
-
   }
 
   return response;
