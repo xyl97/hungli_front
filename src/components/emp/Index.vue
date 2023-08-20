@@ -18,8 +18,8 @@
 
 
 <script>
-    import Menu from './/Menus.vue'
-    import Content from './/ContentIndex.vue'
+    import Menu from './Menus.vue'
+    import Content from './ContentIndex.vue'
     export default {
         components:{
             Menu,

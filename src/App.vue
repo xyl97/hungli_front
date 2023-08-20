@@ -19,7 +19,7 @@
 
 </style>
 <script>
-    // import StudentList from "./components/student/StudentList";
+
     export default {
         provide() {
             return {
@@ -31,9 +31,9 @@
                 isRouterAlive: true
             }
         },
-       // components: {StudentList}
+
         methods: {
-            // 解决登陆成功后重新加载当前页面方法
+            // 解决重新加载当前页面方法
             reload() {
                 this.isRouterAlive = false
                 this.$nextTick(() => {

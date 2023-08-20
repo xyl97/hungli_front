@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-// import StudentList from '../components/student/EmpList.vue'
+
 import Lgoin from '@/components/emp/Lgoin.vue'
 
-import index from '@/components/emp/index.vue'
+import index from '@/components/emp/Index.vue'
 import Home from '@/components/emp/Home.vue'
 //
 const emp =()=>import('../components/emp/Emp.vue')
 const emplist =()=>import('@/components/emp/EmpList.vue')
-const empCount =()=>import('../components/emp/empCount.vue')
+const empCount =()=>import('../components/emp/EmpCount.vue')
 Vue.use(VueRouter)
 
 const routes = [
@@ -21,7 +21,7 @@ const routes = [
 
   {
     path: '/index',
-    name: 'index',
+    name: 'Index',
     component: index,
     children:[
       {

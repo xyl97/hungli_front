@@ -1,3 +1,5 @@
+
+
 <template>
 
     <div>
@@ -94,8 +96,8 @@
 </template>
 <script>
 
-    import addEmp from ".//addEmp.vue"
-    import updateEmp from ".//upDateEmp.vue"
+    import addEmp from "./AddEmp.vue"
+    import updateEmp from "./UpDateEmp.vue"
     export default {
         inject:["reload"],
         name: "StudentList",
